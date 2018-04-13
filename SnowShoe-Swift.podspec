@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/snowshoestamp/snowshoe-swift.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '9.0'
+  s.swift_version = '4.1'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'

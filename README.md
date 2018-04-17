@@ -36,7 +36,7 @@ pod "SnowShoe-Swift", :git => 'https://github.com/snowshoestamp/snowshoe-swift-3
 SnowShoe-Swift is also available with [Carthage](https://github.com/Carthage/Carthage). To install it, add the following line to your Cartfile:
 
 ```ruby
-github "mluedke2/snowshoe-swift"
+github "snowshoestamp/snowshoe-swift"
 ```
 
 For Swift 3:

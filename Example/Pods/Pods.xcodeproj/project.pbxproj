@@ -38,6 +38,7 @@
 		7753604B59260E35847002F7B1756071 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6ECA7088158152AF491480EED7291EE /* ObjectMapper.framework */; };
 		7F1E9E1E1B49552F24FB32C65B9FEB7A /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1F5B162854ABDACD1C37B36E6B9EE5 /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		83BDCEE0EF83CB768AC9D5E50C6CC996 /* SnowShoe-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C7BDBEE1A6B848D1DDADC68DD4DB37 /* SnowShoe-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8850FE9320D85AEB00ADA0B3 /* SSTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8850FE9220D85AEB00ADA0B3 /* SSTapGestureRecognizer.swift */; };
 		88A7AED2207D3186000BA3C3 /* NotificationCenter+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A7AED1207D3186000BA3C3 /* NotificationCenter+OAuthSwift.swift */; };
 		88A7AED4207D3BE3000BA3C3 /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A7AED3207D3BE3000BA3C3 /* IntegerOperators.swift */; };
 		8D659D019E3980DE8F3D0E4BC839DE30 /* URL+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84406292E7E98172B6969E51B31751DB /* URL+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -169,6 +170,7 @@
 		84406292E7E98172B6969E51B31751DB /* URL+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+OAuthSwift.swift"; path = "Sources/URL+OAuthSwift.swift"; sourceTree = "<group>"; };
 		85AD6016A172F73A517BA47F70F5E911 /* OAuthSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuthSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CCCA0B2F995BB176F2F062F3C21D66 /* Pods-SnowShoe-Swift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SnowShoe-Swift_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8850FE9220D85AEB00ADA0B3 /* SSTapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSTapGestureRecognizer.swift; sourceTree = "<group>"; };
 		88A7AED1207D3186000BA3C3 /* NotificationCenter+OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+OAuthSwift.swift"; path = "Sources/NotificationCenter+OAuthSwift.swift"; sourceTree = "<group>"; };
 		88A7AED3207D3BE3000BA3C3 /* IntegerOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntegerOperators.swift; path = Sources/IntegerOperators.swift; sourceTree = "<group>"; };
 		8DC8CFB846B90541A88DA72F29957431 /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
@@ -479,6 +481,7 @@
 				AB5816435B180B844F95C99526658BC8 /* SnowShoeResult.swift */,
 				9AC6158F61B2F2E8E7B9BEE8C4080AEF /* SnowShoeStamp.swift */,
 				E10480E16488748074973E9ED07BD517 /* SnowShoeView.swift */,
+				8850FE9220D85AEB00ADA0B3 /* SSTapGestureRecognizer.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -749,6 +752,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56F410DA597A9C7BDCDC1CB77C9C79E5 /* SnowShoe-Swift-dummy.m in Sources */,
+				8850FE9320D85AEB00ADA0B3 /* SSTapGestureRecognizer.swift in Sources */,
 				4427925ECA6196B82DC3DBB3D8A9EA46 /* SnowShoeDateTransform.swift in Sources */,
 				3A6AFCDFFAA07996275F9E42FBF01025 /* SnowShoeDelegate.swift in Sources */,
 				FD689D0E106F0E5168C5CA9622D3F95B /* SnowShoeError.swift in Sources */,
@@ -1091,7 +1095,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1182,6 +1187,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;

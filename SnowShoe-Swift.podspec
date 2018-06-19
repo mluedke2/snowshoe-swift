@@ -29,5 +29,5 @@ Pod::Spec.new do |s|
   #}
 
   s.dependency 'OAuthSwift', '1.2.0'
-  s.dependency 'ObjectMapper', '3.1.0'
+  s.dependency 'ObjectMapper', '3.3.0'
 end

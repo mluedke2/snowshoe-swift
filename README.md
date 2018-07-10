@@ -39,6 +39,11 @@ SnowShoe-Swift is also available with [Carthage](https://github.com/Carthage/Car
 github "snowshoestamp/snowshoe-swift"
 ```
 
+For Swift 3:
+
+```ruby
+github "snowshoestamp/snowshoe-swift-3"
+```
 
 ## Usage
 

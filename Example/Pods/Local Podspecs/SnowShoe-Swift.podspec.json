@@ -1,34 +1,29 @@
 {
   "name": "SnowShoe-Swift",
-  "version": "1.0.0",
-  "summary": "iOS wrapper for SnowShoe in Swift 2",
+  "version": "2.0.1",
+  "summary": "iOS wrapper for SnowShoe in Swift",
   "description": "SnowShoe is an authentication tool for smartphones. This library provides a simple Swift wrapper.",
-  "homepage": "https://github.com/mluedke2/SnowShoe-Swift",
+  "homepage": "https://github.com/snowshoestamp/snowshoe-swift",
   "license": "MIT",
   "authors": {
-    "Matt Luedke": "mluedke2@gmail.com"
+    "SnowShoe": "support@snowshoestamp.com"
   },
   "source": {
-    "git": "https://github.com/mluedke2/SnowShoe-Swift.git",
-    "tag": "1.0.0"
+    "git": "https://github.com/snowshoestamp/snowshoe-swift.git",
+    "tag": "2.0.1"
   },
-  "social_media_url": "https://twitter.com/matt_luedke",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
+  "swift_version": "5",
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "SnowShoe-Swift": [
-      "Pod/Assets/*.png"
-    ]
-  },
   "dependencies": {
     "OAuthSwift": [
-      "0.4.4"
+      "1.3.0"
     ],
     "ObjectMapper": [
-      "0.17"
+      "3.4.2"
     ]
   }
 }

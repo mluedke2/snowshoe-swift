@@ -28,17 +28,18 @@ extension ViewController: SnowShoeDelegate {
     // start activity indicator, etc
   }
 
-  func onStampResult(result: SnowShoeResult?) {
+  func onStampResult(_ result: SnowShoeResult?) {
     if let result = result {
       if let stamp = result.stamp {
         // handle stamp
-        print("stamp found! serial: \(stamp.serial)")
+        print("stamp found! serial: \(String(describing: stamp.serial))")
       } else if let error = result.error {
         // handle snowshoe error
-        print("\(error.message)")
+        print("\(String(describing: error.message))")
       }
     } else {
       // handle request error
+      print("There was an error, try again.")
     }
   }
 }

@@ -33,6 +33,12 @@ For Swift 4.1:
 pod "SnowShoe-Swift", :git => 'https://github.com/snowshoestamp/snowshoe-swift', :branch => 'swift_4'
 ```
 
+For Swift 5:
+
+```ruby
+pod "SnowShoe-Swift", :git => 'https://github.com/snowshoestamp/snowshoe-swift', :branch => 'swift_5'
+```
+
 SnowShoe-Swift is also available with [Carthage](https://github.com/Carthage/Carthage). To install it, add the following line to your Cartfile:
 
 ```ruby

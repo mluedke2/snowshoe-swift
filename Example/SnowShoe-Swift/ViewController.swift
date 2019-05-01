@@ -32,10 +32,10 @@ extension ViewController: SnowShoeDelegate {
     if let result = result {
       if let stamp = result.stamp {
         // handle stamp
-        print("stamp found! serial: \(stamp.serial)")
+        print("stamp found! serial: \(String(describing: stamp.serial))")
       } else if let error = result.error {
         // handle snowshoe error
-        print("\(error.message)")
+        print("\(String(describing: error.message))")
       }
     } else {
       // handle request error
